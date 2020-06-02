@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+<script>
+    $.ajax({
+        url: '/home/json1',
+        dataType: 'json',
+        success(data) {
+            console.log(data)
+        }
+    })
+    $.ajax({
+        url: '/home/MysqlDatabase',
+        dataType: 'json',
+        success(data) {
+            console.log(data)
+        }
+    })
+</script>
+
